@@ -13,46 +13,9 @@
                         User sees his information on Profile Route. He can upgrade his data.
                         We will try to add QR code scanner and Payment method using QR Scanner.
 
-                        Still, we are discussing ‍about futures. Some could be changed or added new.
+                        
 
 
-* Uses Technologies: (1). React Js (2).TailwindCss. (3).React Icons (4).Firebase (5).Daisy UI (6). recharts
-
-
-* TOTALLY COPY THIS CODE FOR tailwind.config.js FILE:
--------------------------------------------------
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {},
-  },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-
-          "primary": "#008F91",
-
-          "secondary": "#F2F2F2",
-
-          "accent": "#3A4256",
-
-          "black": "#000000",
-
-          "base-100": "#FFFFFF",
-
-          "info": "#3ABFF8",
-
-          "success": "#36D399",
-
-          "warning": "#F79100",
-
-          "error": "#F87272",
-        },
-      },
-    ],
-  },
-  plugins: [require("daisyui")],
-}
+* Uses Technologies: (1). React Js (2).TailwindCss. (3).React Icons (4).Firebase (5).Daisy UI (6). rechart
 
 -------------------------------------------
