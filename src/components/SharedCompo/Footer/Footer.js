@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <div className='text-primary bg-secondary' >
 
-            <ScrollToTop smooth top="2000" />
+            <ScrollToTop width='54px' viewBox='0 0 400 256' smooth top="2000" />
 
 
             <footer className="footer  py-10 lg:px-20 mx-auto text-white font-normal">
@@ -79,7 +79,7 @@ const Footer = () => {
             </footer>
 
             <div className='bg-primary text-white text-sm'>
-                <p className='text-center py-4'><p>All Rights Received || Copyright &copy; {getYear()} - Team Cyber-6 </p></p>
+                <p className='text-center py-4'><p>All Rights Received || Copyright &copy; {getYear()}</p></p>
             </div>
 
 

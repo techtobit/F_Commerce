@@ -100,10 +100,10 @@ const DashboardNav = () => {
             <img src={Calculator} alt="" />
             <Link to='CurrencyConvert'>CurrencyConvert</Link>
           </li>
-          <li className='flex items-center navItem'>
+          {/* <li className='flex items-center navItem'>
             <img src={TransitionHistory} alt="" />
             <Link to='TransitionHistory'>Transition History</Link>
-          </li>
+          </li> */}
           <li className='flex items-center navItem'>
             <img src={TakeLone} alt="" />
             <Link to='takeLone'>Paypal</Link>
@@ -126,11 +126,10 @@ const DashboardNav = () => {
             <img src={Rating} alt="" />
             <Link to='addReview'>Add Review</Link>
           </li>
-          <li className='flex items-center navItem'>
+          {/* <li className='flex items-center navItem'>
             <img src={Setting} alt="" />
-            {/* <Link to='Setting'>Setting</Link> */}
             <Link to='Setting'>Setting</Link>
-          </li>
+          </li> */}
         </ul>
 
 

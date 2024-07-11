@@ -66,7 +66,7 @@ const Footer = () => {
 
 
             <div className=' text-white font-bold flex justify-between items-center px-10 py-1'>
-                <p className='text-center '><p>All Rights Received || Copyright &copy; {getYear()} - Team Cyber-6 </p></p>
+                <p className='text-center '><p>All Rights Received || Copyright &copy; {getYear()}</p></p>
                 <p><a href='/' className='terms'> Terms </a>|| <a href='/' className='privacy'>Privacy</a></p>
             </div>
         </div>

@@ -52,6 +52,7 @@ import SettingDemo from "./components/Dashboard/MyAccount/SettingDemo";
 import Paypal from "./components/Hooks/Paypal/Paypal";
 
 import AboutUs from './components/Pages/AboutUs/AboutUs';
+import NotFound from "./components/Pages/NotFoundPage/NotFound";
 
 
 
@@ -123,16 +124,17 @@ function App() {
 
           <Route path="CurrencyConvert" element={<CurrencyConvert />}></Route>
 
-          {/* <Route path="TransitionHistory" element={<ViewAllTransaction></ViewAllTransaction>}></Route>
+          {/* <Route path="TransitionHistory" element={<ViewAllTransaction></ViewAllTransaction>}></Route> */}
           <Route path="takeLone" element={<Paypal />}></Route>
           <Route path="ContactUS" element={<ContactUS></ContactUS>}></Route>
           <Route path="Faqs" element={<Faqs></Faqs>}></Route>
           <Route path="addReview" element={<AddReview />}></Route>
-          <Route path="SupportTicket" element={<TakeLone />}></Route> */}
+          <Route path="SupportTicket" element={<TakeLone />}></Route>
           {/* <Route path="Setting" element={<Setting />}></Route> */}
           {/* <Route path="Setting" element={<SettingDemo />}></Route> */}
           <Route path="LogOut" element={<TakeLone />}></Route>
         </Route>
+        <Route path="*" element={<NotFound/>}></Route>
       </Routes>
       <Toaster />
       <ToastContainer />

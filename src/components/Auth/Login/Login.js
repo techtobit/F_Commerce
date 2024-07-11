@@ -53,7 +53,7 @@ const Login = () => {
         //     { backgroundImage: `url(${BGLogin})`, backgroundSize: 'cover' }
         //     }
         >
-            <div className='lg:flex lg:justify-between lg:w-[1000px] lg:shadow-2xl hover:bg-secondary bg-primary delay-150 transition duration-300  lg:rounded-md'>
+            <div className='lg:flex lg:justify-between lg:w-[1000px] lg:shadow-2xl  bg-primary delay-150 transition duration-300  lg:rounded-md'>
                 <div className='lg:w-96 lg:pl-6 md:w-96 sm:w-96 flex items-center justify-center '>
                     {/* <img src={LoginImage} alt="" /> */}
                     <lottie-player
@@ -66,7 +66,7 @@ const Login = () => {
                     ></lottie-player>
                 </div>
 
-                <div className='lg:w-96 md:w-96 sm:w-96  shadow-xl bg-secondary hover:bg-primary delay-150 transition duration-300  py-4 px-8 rounded-md'>
+                <div className='lg:w-96 md:w-96 sm:w-96  shadow-xl bg-secondary  delay-150 transition duration-300  py-4 px-8 rounded-md'>
                     <div className='flex gap-4 uppercase pt-10'>
                         <Link to='/login' className=" text-3xl hover:underline hover: underline-offset-8 duration-500 cursor-pointer font-bold text-center text-white">Login</Link>
                         <Link to='/signUp' className="text-3xl hover:underline hover: underline-offset-8 duration-500 cursor-pointer font-bold text-center text-white">Sing Up</Link>
