@@ -4,7 +4,7 @@ import { FaGooglePlay } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import './SubFooter.css';
 
-// import logo from '../../../Assets/poyshaLogo/poyshalogo.png';
+
 import footerLogo from '../../../Assets/poyshaLogo/poyshalogo.png';
 
 
@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className='logoArea flex items-center'>
 
                     <img className='w-10' src={footerLogo} alt="" />
-                    <NavLink to='/' className="logoArea btn btn-ghost lg:ml-1 ml-[-50px] lg:text-2xl font-bold uppercase text-xl" >POYSHA-pay</NavLink>
+                    <NavLink to='/' className="logoArea btn btn-ghost lg:ml-1 ml-[-50px] lg:text-2xl font-bold uppercase text-xl" >e-Pay</NavLink>
                 </div>
                 <hr />
                 <div>

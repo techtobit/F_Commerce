@@ -19,7 +19,7 @@ const Review = () => {
 
   return (
     <div className="w-full mx-auto mt-10">
-      <h2 className="text-center text-3xl font-bold text-primary">Our Clint Says </h2>
+      {/* <h2 className="text-center text-3xl font-bold text-primary">Our Clint Says </h2> */}
       <div className="  grid lg:grid-cols-3 mt-5 sm:grid-cols-1  gap-10 justify-items-center">
         {
           reviews.slice(0, 6).map(review =>
@@ -39,9 +39,10 @@ const Review = () => {
             </div>
           )}
       </div>
-      <div className="flex justify-end m-5">
+      {/* <div className="flex justify-end m-5">
         <button className="btn btn-link  content-center justify-items-center  btn-lg">See More --
-        </button></div>
+        </button>
+        </div> */}
     </div>
   );
 };

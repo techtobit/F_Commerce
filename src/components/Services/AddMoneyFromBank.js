@@ -16,6 +16,7 @@ const AddMoneyFromBank = () => {
     const [bName, setBName] = useState([]);
     const [transactions, setTransactions] = useState([]);
     // const [banksNames, setBanksNames] = BankNames()
+    const [banksNames, setBanksNames] = useState()
     const [user, loading] = useAuthState(auth);
 
     const [userData, setUserData] = DBUserData();
@@ -23,13 +24,12 @@ const AddMoneyFromBank = () => {
     const banks = userData?.addBankAccount;
     const id = userData?._id;
 
-
-
+    
 
 
     const onSubmit = (data) => {
         console.log(data);
-        const url = `http://localhost:4000/addMoney/${id}`;
+        const url = `http://localhost:4000/addMoney/addMoneyBank/${id}`;
         axios.put(url, data)
             .then(response => {
                 console.log(response);
@@ -43,23 +43,6 @@ const AddMoneyFromBank = () => {
             .catch(error => {
                 toast.error(`${error?.response?.data?.error}`)
             });
-
-        // fetch(`http://localhost:4000/addMoney/${id}`, {
-        //     method: 'PUT',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         setTransactions()
-        //         swal({
-        //             icon: "success",
-        //             text: "Deposit Successful"
-        //         });
-        //     })
 
     }
 
@@ -100,7 +83,7 @@ const AddMoneyFromBank = () => {
                                     value: 12,
                                     message: 'Please Type Minimum  12 Digit  Account Number '
                                 }, maxLength: {
-                                    value: 14,
+                                    value: 12,
                                     message: 'Please Type Maximum  14 Digit  Account Number'
                                 }
                             })}

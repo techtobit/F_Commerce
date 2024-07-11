@@ -5,7 +5,10 @@ const useAddedAccounts = () => {
     useEffect(() => {
         fetch('http://localhost:4000/addedAccount')
             .then(res => res.json())
-            .then(data => setAddedAccounts(data));
+            .then(data => {
+                console.log(data);
+                setAddedAccounts(data)
+            });
     }, []);
     return [addedAccount, setAddedAccounts]
 };

@@ -13,7 +13,6 @@ const dashCardBg = `https://eduvibe.react.devsvibe.com/static/media/home-two-cta
 const Account = () => {
   const [services, setServices] = useState([])
   const [userData, setUserData, data, status] = DBUserData()
-  console.log(data);
 
   const ref = useRef(null);
   React.useEffect(() => {
@@ -40,7 +39,7 @@ const Account = () => {
                   <div className="">
 
                     <h1 className="account-title lg:text-left text-center lg:text-xl text-sm">
-                      Poysha - Pay Personal Account
+                      E-Pay Personal Account
                     </h1>
                     <div className="account-number grid grid-cols-1 items-center">
                       <h5 className="account-id lg:text-left text-center">{userData?.email}</h5>

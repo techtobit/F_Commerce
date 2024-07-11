@@ -53,7 +53,7 @@ const AboutUS = () => {
                 </svg>
                 <span className="relative">Welcome To</span>
               </span>
-              <span> our POYSHA-PAY team of Professionals</span>
+              <span> our e-Pay team of Professionals</span>
             </h2>
             <p className="text-base text-gray-700 dark:text-white md:text-lg select-none">
               An POYSHAPAY team members work cooperatively alongside other

@@ -45,10 +45,10 @@ const Navbar = () => {
   const navMenu = <>
     <Link to='/dashboard' className='nav-btn btn btn-sm px-5 rounded-full btn-active text-secondary border-0 hover:text-white bg-white hover:bg-primary content-center'>Explore</Link>
 
-    <Link to='/aboutUs' className='nav-btn btn btn-sm px-5 rounded-full btn-active text-secondary border-0 hover:text-white bg-white hover:bg-primary content-center'>AboutUs</Link>
+    {/* <Link to='/aboutUs' className='nav-btn btn btn-sm px-5 rounded-full btn-active text-secondary border-0 hover:text-white bg-white hover:bg-primary content-center'>AboutUs</Link> */}
 
     {/* <Link to='/dashboard' className='nav-btn btn btn-sm px-5  rounded-full btn-active text-secondary border-0 hover:text-white bg-white hover:bg-primary content-center'>FAQs</Link> */}
-    <Link to='/dashboard' className='nav-btn btn btn-sm px-5  rounded-full btn-active text-secondary border-0 hover:text-white bg-white hover:bg-primary content-center'>Support</Link>
+    {/* <Link to='/dashboard' className='nav-btn btn btn-sm px-5  rounded-full btn-active text-secondary border-0 hover:text-white bg-white hover:bg-primary content-center'>Support</Link> */}
   </>
 
 
@@ -58,13 +58,13 @@ const Navbar = () => {
         <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg> */}
             </label>
             <ul tabindex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               {navMenu}
             </ul>
           </div>
-          <Link to="/" className=" lg:ml-1 ml-[-50px] lg:text-md font-semibold uppercase text-primary lg:flex  hidden " >POYSHAPAY</Link>
+          <Link to="/" className=" lg:ml-1 ml-[-50px] lg:text-md font-semibold uppercase text-primary lg:flex  hidden " >E-PAY</Link>
         </div>
         <div className='navbar-center'>
           <div className=" hidden lg:flex">

@@ -8,7 +8,7 @@ const BankNames = () => {
             .then(res => res.json())
             .then(data => {
                 setBanksNames(data)
-                //console.log(banksNames.name)
+                console.log('bank name',data)
             })
     }, [])
 

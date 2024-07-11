@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useForm } from "react-hook-form";
-import PhoneInput from 'react-phone-number-input';
+import {  useForm, Controller } from "react-hook-form";
+import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input';
 import BgSendMoney from '../../../Assets/Send Money/background2.jpg';
 import DBUserData from '../../Hooks/UserData/DBUserData';
 import swal from 'sweetalert';
@@ -10,11 +10,12 @@ import Loading from '../../SharedCompo/Loading';
 
 
 const SendMoney = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const { control,register, handleSubmit, formState: { errors }, reset } = useForm();
   const [value, setValue] = useState();
   const [userData] = DBUserData([]);
 
   const onSubmit = data => {
+    console.log(data);
     const userId = userData?._id;
     const sendTo = userData?.phoneNumber;
     const sendAmount = data.sendAmount;
@@ -64,7 +65,7 @@ const SendMoney = () => {
                 <label class="label">
                   <span class="label-text ">Send To</span>
                 </label>
-                <PhoneInput
+                {/* <PhoneInput
                   className='input border-primary'
                   placeholder="Enter phone number"
                   international
@@ -77,9 +78,30 @@ const SendMoney = () => {
                       message: 'Phone Number is required'
                     }
                   })}
+                /> */}
+                <Controller
+                  name="sendFrom"
+                  control={control}
+                  rules={{
+                    validate: (value) => isValidPhoneNumber(value)
+                  }}
+                  render={({ field: { onChange, value } }) => (
+                    <PhoneInput
+                      className='input border-primary'
+                      placeholder="Enter phone number"
+                      value={value}
+                      onChange={onChange}
+                      defaultCountry="BD"
+                      id="sendFrom"
+                    />
+                  )}
                 />
+                {errors["sendFrom"] && (
+                  <p className="error-message">Invalid Phone</p>
+                )}
               </div>
             </div>
+
 
             <div className="grid">
               <div class="form-control">

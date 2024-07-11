@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 const LinkedAccountsHook = () => {
   const [linkedBanks, setLinkedBanks] = useState([]);
-  useEffect(() => {
     fetch('LinkedAccounts.json')
       .then(res => res.json())
-      .then(data => setLinkedBanks(data))
-  }, [linkedBanks])
+      .then(data =>{ 
+        console.log('linkedAccount', data);
+        setLinkedBanks(data)})
   return [linkedBanks, setLinkedBanks];
 };
 

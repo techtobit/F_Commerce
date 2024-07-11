@@ -40,6 +40,7 @@ const DBUserData = () => {
             toast.error(`${response?.error}`)
           }
           if (response?.data) {
+            console.log(response?.data.AddMoney);
             setUserData(response?.data);
           }
         })

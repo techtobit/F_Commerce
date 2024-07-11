@@ -10,7 +10,7 @@
   "date" : "Today",
   "where" : "FoodPanda",
   "payBy" : "Master Card",
-  "transactionsType" : "Debit",
+  "transactionsType" : "Cradit",
   "amount" : "1753"
  },
  {

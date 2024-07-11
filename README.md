@@ -1,7 +1,7 @@
 # Getting Started with Create React App
-* Project Live site:  https://poysha-pay.web.app
+* Project Live site:  https://e-Pay.web.app
 * Project Name   :        F-Commerce
-* Project Title  :        POYSHA-PAY
+* Project Title  :        e-Pay
 * Project Type   :        We will create an f-commerce website like bkash, upay,Paypal ect.
 * Project Futures:      As we say its will be inspaire by diffternt differnt eWallelt.
                         We can add money from another wallet. Also can send.

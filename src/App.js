@@ -74,10 +74,10 @@ function App() {
           <StripePayment />
         </RequireAuth>}>
         </Route>
-        {/* <Route path='/addMoneyFromBank' element={
+        <Route path='/addMoneyFromBank' element={
           <AddMoneyFromBank />
         }>
-        </Route> */}
+        </Route>
 
 
 
@@ -95,11 +95,11 @@ function App() {
 
         <Route path='/addMoney' element={<RequireAuth><AddMoney /></RequireAuth>}></Route>
         <Route path='/sendMoney' element={<RequireAuth><SendMoney /></RequireAuth>}></Route>
-        <Route path='/dashboard' element={<RequireAuth> <Dashboard></Dashboard></RequireAuth>}></Route>
+        {/* <Route path='/dashboard' element={<RequireAuth> <Dashboard></Dashboard></RequireAuth>}></Route>
         <Route path='/addAccount' element={<RequireAuth> <OthersAccounts></OthersAccounts> </RequireAuth>}></Route>
         <Route path='/dashboard' element={<RequireAuth> <Dashboard /></RequireAuth>}></Route>
         <Route path="/contactUs" element={<ContactUS></ContactUS>} ></Route>
-        <Route path="/aboutUs" element={<AboutUs></AboutUs>} ></Route>
+        <Route path="/aboutUs" element={<AboutUs></AboutUs>} ></Route> */}
 
         <Route path='/login' element={<Login />}></Route>
         <Route path='/signup' element={<SignUp />}></Route>
@@ -112,7 +112,7 @@ function App() {
           <Route path="dashboard" element={<SendMoney />}></Route>
           <Route path="myAccount" element={<SendMoney />}></Route>
           <Route path="sendMoney" element={<SendMoney />}></Route>
-          <Route path="addMoney"  element={<AddMoney></AddMoney>}></Route>
+          {/* {/* <Route path="addMoney"  element={<AddMoney></AddMoney>}></Route> */}
           <Route path="addAccount" element={<OthersAccounts />}></Route>
           <Route path="RequestMoney" element={<AddMoney />}></Route>
           <Route path="BankTransfer" element={<StripePayment />}></Route>
@@ -123,14 +123,14 @@ function App() {
 
           <Route path="CurrencyConvert" element={<CurrencyConvert />}></Route>
 
-          <Route path="TransitionHistory" element={<ViewAllTransaction></ViewAllTransaction>}></Route>
+          {/* <Route path="TransitionHistory" element={<ViewAllTransaction></ViewAllTransaction>}></Route>
           <Route path="takeLone" element={<Paypal />}></Route>
           <Route path="ContactUS" element={<ContactUS></ContactUS>}></Route>
           <Route path="Faqs" element={<Faqs></Faqs>}></Route>
           <Route path="addReview" element={<AddReview />}></Route>
-          <Route path="SupportTicket" element={<TakeLone />}></Route>
+          <Route path="SupportTicket" element={<TakeLone />}></Route> */}
           {/* <Route path="Setting" element={<Setting />}></Route> */}
-          <Route path="Setting" element={<SettingDemo />}></Route>
+          {/* <Route path="Setting" element={<SettingDemo />}></Route> */}
           <Route path="LogOut" element={<TakeLone />}></Route>
         </Route>
       </Routes>
